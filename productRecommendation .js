@@ -1,5 +1,4 @@
 //algorithm to suggest products
-
 function dijkstra(graph, startProduct) {
     let n = graph.length;
     let minDistances = new Array(n).fill(Infinity);
@@ -11,7 +10,6 @@ function dijkstra(graph, startProduct) {
         let minIndex = -1;
         for (let j = 0; j < n; j++) {
             if (!visited[j] && (minIndex === -1 || minDistances[j] < minDistances[minIndex])) {
-                //
                     minIndex = j;
             }
         }
